@@ -12,15 +12,8 @@ echo "Building ${IMAGE_NAME}:${TAG}"
 # This is the standard list for a non-Bluefin desktop.
 # Remove "bluefin-parity" if the base image is Bluefin.
 OSFORGE_SCRIPTS_TO_USE=(
-    "flatpak-substiution-removals"
-    "bluefin-parity"
     "tr-pki"
-    "tr-ui"
-    "google-chrome"
-    "vscode"
-    "brew"
     "cockpit"
-    "virtualization"
     "docker"
 )
 if command -v dnf5; then
@@ -52,13 +45,5 @@ echo " STARTING $IMAGE_NAME OVERRIDES "
 echo "=========================================================================================="
 /ctx/build/image-overrides.sh
 echo "=========================================================================================="
-echo " $IMAGE_NAME OVERRIDES FINISHED  "
-echo "=========================================================================================="
-
-echo "=========================================================================================="
-echo " STARTING CUSTOM FLATPAK/BREW/UJUST CONFIGURATION" 
-echo "=========================================================================================="
-/ctx/build/custom.sh
-echo "=========================================================================================="
-echo " CUSTOM FLATPAK/BREW/UJUST CONFIGURATION FINISHED -- BUILD COMPLETE "
+echo " $IMAGE_NAME OVERRIDES FINISHED  -- BUILD COMPLETE"
 echo "=========================================================================================="
