@@ -43,7 +43,7 @@ COPY build /build
 COPY tr-osforge/reusable_scripting /oci/tr-osforge
 
 # Base Image (substitute with your chosen base image)
-FROM quay.io/almalinuxorg/almalinux-bootc:10.1
+FROM quay.io/almalinuxorg/almalinux-bootc:10.1@sha256:63f8a6f26a30127353d3a8ed482c840bc28f5e9aa6943b7bc14b847518c9edc2
 
 ## Example alternative base images;
 ## Note that there is no desktop included
