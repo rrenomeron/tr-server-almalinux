@@ -8,5 +8,11 @@ echo "Installing additional server packages"
 dnf install -y \
     git \
     firewalld \
-    cloud-init
-    
+    cloud-init \
+    setroubleshoot-server
+
+echo "Installing k0s"
+
+curl -sSLf https://get.k0s.sh | sh
+mv /usr/local/bin/k0s /usr/bin
+
