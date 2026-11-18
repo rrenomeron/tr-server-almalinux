@@ -13,7 +13,7 @@ dnf install -y --setopt=install_weak_deps=false \
     setroubleshoot-server
 
 echo "Installing k[03]s install scripts"
-for j in 1 3; do
+for j in 0 3; do
     curl -sfL https://get.k${j}s.io > /usr/bin/install-k${j}s
     chmod 755 /usr/bin/install-k${j}s
 done
