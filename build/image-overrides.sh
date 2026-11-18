@@ -8,7 +8,7 @@ echo "Installing additional server packages"
 dnf install -y --setopt=install_weak_deps=false \
     container-selinux \
     epel-release \
-    git \
+    git-core \
     firewalld \
     cloud-init \
     setroubleshoot-server
