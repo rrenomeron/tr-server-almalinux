@@ -8,4 +8,4 @@ dnf install -y 'dnf-command(config-manager)'
 
 echo "Setting up usable /usr/local"
 rm -rf /usr/local
-ln -s /var/usrlocal /usr/local
+ln -s ../var/usrlocal /usr/local
