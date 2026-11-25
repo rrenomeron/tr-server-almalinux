@@ -35,6 +35,7 @@ dnf install -y --setopt=install_weak_deps=false \
     helm \
     kubectl \
     k3s-selinux \
+    netcat \
     restic \
     setroubleshoot-server
 
