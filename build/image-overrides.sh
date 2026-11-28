@@ -37,6 +37,7 @@ dnf install -y --setopt=install_weak_deps=false \
     k3s-selinux \
     netcat \
     restic \
+    rsync \
     setroubleshoot-server
 
 echo "Installing k[03]s install scripts"
